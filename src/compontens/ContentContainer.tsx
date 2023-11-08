@@ -4,7 +4,7 @@ import TopNavBar from './TopNavBar';
 
 function ContentContainer() {
   return (
-    <div className="ml-80 h-full w-full">
+    <div>
       <TopNavBar />
       <Posts />
       <ChatBar />

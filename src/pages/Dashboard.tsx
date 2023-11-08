@@ -4,7 +4,7 @@ import SideBar from '../compontens/SideBar';
 
 function Dashboard() {
   return (
-    <div className="flex transition-all duration-500 w-full">
+    <div>
       <SideBar />
       <ChannelBar />
       <ContentContainer />

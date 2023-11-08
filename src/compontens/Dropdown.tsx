@@ -15,22 +15,21 @@ function Dropdown({ title, items }: Props) {
   };
 
   return (
-    <div className="mb-2">
+    <div>
       <button
         onClick={ toggleExpansion }
-        className="flex items-center gap-1 cursor-pointer"
       >
         {expanded
-          ? <FaChevronDown className="text-gray-600" />
-          : <FaChevronRight className="text-gray-600" />}
-        <h2 className="font-bold text-blue-500">{title}</h2>
+          ? <FaChevronDown />
+          : <FaChevronRight />}
+        <h2>{title}</h2>
       </button>
       {expanded && (
         <div>
           {items.map((item) => (
-            <div key={ item } className="flex items-center font-semibold pl-4">
-              <BsHash size={ 22 } className="text-gray-400" />
-              <h3 className="text-gray-600 tracking-wide">{item}</h3>
+            <div key={ item }>
+              <BsHash size={ 22 } />
+              <h3>{item}</h3>
             </div>
           ))}
         </div>

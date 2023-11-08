@@ -2,11 +2,7 @@ import Post from './Post';
 
 function Posts() {
   return (
-    <div
-      className="flex flex-col w-full bg-gray-300 pt-6 gap-8 dark:bg-gray-700
-      transition-all duration-300
-      "
-    >
+    <div>
       <Post username="Ricardinho" timestamp="2 days ago" />
       <Post username="Ricardo" timestamp="7 hour ago" />
       <Post username="Raposo" timestamp="4 hour ago" />

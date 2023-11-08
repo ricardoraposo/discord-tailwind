@@ -25,7 +25,9 @@ function Login() {
         bg-gray-800 p-12 gap-4 rounded-xl drop-shadow-xl"
         onSubmit={ form.handleSubmit }
       >
-        <BsDiscord size={ 40 } className="text-gray-300" />
+        <div className="bg-blue-500 p-2 rounded-xl">
+          <BsDiscord size={ 40 } className="text-gray-300" />
+        </div>
         <h1 className="text-2xl text-gray-300">Login</h1>
         <input
           name="email"
@@ -33,9 +35,8 @@ function Login() {
           value={ form.values.email }
           onChange={ form.handleChange }
           placeholder="Email"
-          className="bg-gray-800 py-2 px-3 rounded-lg placeholder-gray-300
-          border-2 border-blue-500
-          placeholder:opacity-60 w-full"
+          className="bg-gray-600 py-2 px-3 rounded-lg placeholder-gray-300 text-white
+          placeholder:opacity-60 w-full outline-none"
         />
         <input
           name="password"
@@ -43,14 +44,13 @@ function Login() {
           value={ form.values.password }
           onChange={ form.handleChange }
           placeholder="Password"
-          className="bg-gray-800 py-2 px-3 rounded-lg placeholder-gray-300
-          border-2 border-blue-500
-          placeholder:opacity-60 w-full"
+          className="bg-gray-600 py-2 px-3 rounded-lg placeholder-gray-300 text-white
+          placeholder:opacity-60 w-full outline-none"
         />
         <button
           disabled={ !form.validate }
-          className="bg-blue-500 py-2 px-3 rounded-lg w-3/4
-          disabled:opacity-60"
+          className="bg-blue-500 text-white py-2 px-3 rounded-lg w-3/4
+          disabled:opacity-60 disabled:text-black"
         >
           Enter
         </button>

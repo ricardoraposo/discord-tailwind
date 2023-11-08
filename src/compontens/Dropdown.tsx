@@ -15,7 +15,7 @@ function Dropdown({ title, items }: Props) {
   };
 
   return (
-    <div className="mb-2">
+    <div className="mb-2 transition">
       <button
         onClick={ toggleExpansion }
         className="flex items-center gap-1 cursor-pointer"
@@ -25,16 +25,17 @@ function Dropdown({ title, items }: Props) {
           : <FaChevronRight className="text-gray-600" />}
         <h2 className="font-bold text-blue-500">{title}</h2>
       </button>
-      {expanded && (
-        <div>
-          {items.map((item) => (
-            <div key={ item } className="flex items-center font-semibold pl-4">
-              <BsHash size={ 22 } className="text-gray-400" />
-              <h3 className="text-gray-600 tracking-wide">{item}</h3>
-            </div>
-          ))}
-        </div>
-      )}
+      <div
+        className={ `${expanded
+          ? 'scale-100' : 'scale-0 h-0'} transition-all duration-300 origin-top-left` }
+      >
+        {items.map((item) => (
+          <div key={ item } className="flex items-center font-semibold ml-4">
+            <BsHash size={ 22 } className="text-gray-400" />
+            <h3 className="text-gray-600 tracking-wide">{item}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

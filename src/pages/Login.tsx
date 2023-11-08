@@ -28,7 +28,7 @@ function Login() {
         <div className="bg-blue-500 p-2 rounded-xl">
           <BsDiscord size={ 40 } className="text-gray-300" />
         </div>
-        <h1 className="text-2xl text-gray-300">Login</h1>
+        <h1 className="text-2xl text-gray-300 font-display">Login</h1>
         <input
           name="email"
           type="text"

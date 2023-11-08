@@ -1,3 +1,4 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,6 +8,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        display: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
       backgroundImage: {
         'login-bg': "url('./src/images/discord_background.png')"
       },

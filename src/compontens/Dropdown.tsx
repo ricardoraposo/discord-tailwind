@@ -31,7 +31,7 @@ function Dropdown({ title, items }: Props) {
       >
         {items.map((item) => (
           <div key={ item } className="flex items-center font-semibold ml-4">
-            <BsHash size={ 22 } className="text-gray-400" />
+            <BsHash size={ 22 } className="text-gray-600 dark:text-gray-400" />
             <h3 className="text-gray-600 tracking-wide">{item}</h3>
           </div>
         ))}

@@ -7,6 +7,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        'login-bg': "url('./src/images/discord_background.png')"
+      },
       colors: {
         gray: {
           900: '#202225',

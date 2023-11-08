@@ -9,7 +9,7 @@ function ChannelBar() {
     <div
       className="fixed top-0 w-64 h-screen m-0 ml-16 bg-gray-200 p-4 shadow-lg
       dark:bg-gray-800
-      animation-all duration-300"
+      animation-all duration-300 z-0"
     >
       <h1
         className="text-gray-600 font-bold tracking-wide pb-4

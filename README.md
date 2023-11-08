@@ -1,3 +1,3 @@
 # Discord Tailwind
 
-Esse é um projeto criado com as principais tecnologias utilizadas no módulo de front-end da Trybe.
+Material utilizado para momento sobre "Introducão a Tailwind CSS"
